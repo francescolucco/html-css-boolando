@@ -48,7 +48,7 @@
   width: 80px;
   height: 80px;
   font-size: 60px;
-  background-color: white;
+  background-color: white;+++
   text-align: center;
   line-height: 80px;
 }
@@ -59,7 +59,7 @@
   left: 0px;
   bottom: 30px;
 }
-.product-image:hover .heart, .product-image:hover .dicount-area{
+.product-image:hover .heart, .product-image:hover +++++.dicount-area{
   z-index: 20;
 }
 .discount, .sustainability-certification{
