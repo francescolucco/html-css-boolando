@@ -94,6 +94,7 @@
 /* Proprietà gadget dell'area "descrizione del prodotto" */
 .cost, .cost::after{
   color: rgb(245, 25, 80);
+  font-weight: 800;
 }
 .cost::after{
   content: ' \20AC';
