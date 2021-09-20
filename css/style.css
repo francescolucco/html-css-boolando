@@ -14,6 +14,11 @@
 .hidden{
   visibility: hidden;
 }
+.clearfix{
+  content: '';
+  display: table;
+  clear: both;
+}
 
 /* MAIN */
 
