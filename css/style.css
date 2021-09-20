@@ -1,0 +1,101 @@
+/* GLOBAL */
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+.conteiner{
+  width: 80%;
+  margin: 30px auto;
+}
+
+/* MAIN */
+
+/* Divisione spazi dei riquadri di presentazione prodotto */
+.product-box{
+  width: calc(100% / 3 - 25px);
+  margin-right: 20px;
+  margin-bottom: 25px;
+  float: left;
+}
+
+/* Dimensione e posizionamento immagine overlay */
+.product-image{
+  position: relative;
+}
+.product-image img{
+  width: 100%;
+}
+.overlay-image{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  visibility:hidden;
+}
+.product-image:hover .overlay-image{
+  visibility: visible;
+  z-index: 10;
+}
+
+/* Gestione e posizionamento elementi in sovraimpressione sull'immagine del prodotto */
+.heart, .dicount-area{
+  position: absolute;
+}
+.heart{
+  top: 30px;
+  right: 0px;
+  width: 80px;
+  height: 80px;
+  font-size: 60px;
+  background-color: white;
+  text-align: center;
+  line-height: 80px;
+}
+.heart::after{
+  content: '\2665';
+}
+.dicount-area{
+  left: 0px;
+  bottom: 30px;
+}
+.product-image:hover .heart, .product-image:hover .dicount-area{
+  z-index: 20;
+}
+.discount, .sustainability-certification{
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+}
+.discount{
+  font-size: 20px;
+  background-color: rgb(245, 25, 80);
+  padding: 8px 5px;
+  text-align: center;
+}
+.discount::before{
+  content: '-';
+}
+.discount::after{
+  content: '%';
+}
+.sustainability-certification{
+  font-size: 20px;
+  background-color: rgb(8, 143, 87);
+  padding: 8px 5px;
+  text-align: center;
+}
+
+/* Proprietà gadget dell'area "descrizione del prodotto" */
+.cost, .cost::after{
+  color: rgb(245, 25, 80);
+}
+.cost::after{
+  content: ' \20AC';
+}
+.full-price::after{
+  content: ' \20AC';
+}
+.full-price{
+  text-decoration:line-through;
+}
