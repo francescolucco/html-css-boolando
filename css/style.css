@@ -36,6 +36,8 @@
 }
 .product-image img{
   width: 100%;
+  cursor: pointer;
+
 }
 .overlay-image{
   position: absolute;
@@ -46,6 +48,7 @@
 .product-image:hover .overlay-image{
   visibility: visible;
   z-index: 10;
+  cursor: pointer;
 }
 
 /* Gestione e posizionamento elementi in sovraimpressione sull'immagine del prodotto */
